@@ -15,8 +15,8 @@ for i in range(number_of_ones):
     #Second Option   list = [doSomething(j) for j in range(i+1)]   
     listOfLists.append(list)
 
-    
-print(listOfLists)
+for k in range(len(listOfLists)):
+    print(listOfLists[k])
 
 
 
