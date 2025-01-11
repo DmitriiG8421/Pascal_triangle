@@ -1,4 +1,5 @@
-number_of_ones = int(input("Type a number: "))
+# number_of_ones = int(input("Type a number: "))
+number_of_ones = 3
 
 def doSomething(j):
     return 1
@@ -8,15 +9,30 @@ listOfLists = []
 
 for i in range(number_of_ones):
 
-    list = [] 
+    list1 = [] 
     for j in range(i+1):
-        list.append(doSomething(j))   
+        list1.append(doSomething(j))   
 
     #Second Option   list = [doSomething(j) for j in range(i+1)]   
-    listOfLists.append(list)
+    listOfLists.append(list1)
 
-for k in range(len(listOfLists)):
-    print(listOfLists[k])
+
+
+    lenths = []
+for i in listOfLists:
+    lenths.append(len(i))
+max_width = max(lenths)*2-1
+
+
+help = []
+for i in listOfLists:
+    x = map(lambda a : "_".join(a),i)
+    help.append(x)
+for i in help:
+    print(list(i))
+
+
+
 
 
 
