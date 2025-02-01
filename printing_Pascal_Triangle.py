@@ -1,4 +1,4 @@
-number_of_rows = int(input("Type a numberof rows (atleast 1): "))
+number_of_rows = int(input("Type a number of rows: "))
 # number_of_ones = 3
 
 def doSomething(j):
@@ -43,7 +43,7 @@ max_width = max(lenthslist)*2-1
 
 for i in pascaltriangle:
     x = list(map(lambda a : str(a), i))
-    print("_".join(x).center(max_width," "))
+    print(" ".join(x).center(max_width," "))
 
 
 print("End")
