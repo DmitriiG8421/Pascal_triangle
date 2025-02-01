@@ -1,13 +1,5 @@
 number_of_rows = int(input("Type a number of rows: "))
-# number_of_ones = 3
-
-def doSomething(j):
-    return 1
-
 print("\n")
-listOfLists = []
-listOfLists.append([1])
-
 pascaltriangle= [[1]]
 
 
