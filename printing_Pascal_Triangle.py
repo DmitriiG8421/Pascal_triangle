@@ -1,3 +1,6 @@
+
+
+
 number_of_rows = int(input("Type a number of rows: "))
 print("\n")
 pascaltriangle= [[1]]
