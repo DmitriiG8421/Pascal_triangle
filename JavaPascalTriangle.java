@@ -3,6 +3,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class Main {
+
+  public static ArrayList<String> converter(ArrayList<Integer> x) {
+    ArrayList<String> y = new ArrayList<String>();
+    for (int i =0; i < x.size(); i++){
+      y.add(x.get(i).toString());
+    }
+
+   return y;
+  }
+
+
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     ArrayList<ArrayList<Integer> > pascalTriangle = new ArrayList<ArrayList<Integer> >(); 
@@ -35,11 +46,10 @@ class Main {
       lengthList.add(pascalTriangle.get(i).size());
     } 
     int maxWidth = Collections.max(lengthList);
-
+    int intendation = maxWidth-1;
     for (int i = 0; i < pascalTriangle.size(); i++) {
-      
+      String o = String.join(" ",converter(pascalTriangle.get(i)));
+      System.out.println(" ".repeat(intendation-i)+o);   
+      }
     }
-
-
   }
-}
